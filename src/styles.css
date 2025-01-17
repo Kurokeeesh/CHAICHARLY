@@ -119,45 +119,69 @@ section.Accueil{
 }*/
 
 /* Adaptations pour les petits écrans (moins de 768px de largeur) */
-@media (max-width: 768px) {
+@media (max-width: 844px) {
     /* Header */
     header {
         flex-direction: column; /* Réorganise les éléments en colonne */
-        height: auto; /* Adapte la hauteur en fonction du contenu */
-        padding: 10px 20px; /* Réduit les marges internes */
+        height: auto; /* Adapte la hauteur au contenu */
+        padding: 15px 10px; /* Réduit les marges internes */
+        align-items: center; /* Centre tous les enfants */
     }
 
     /* Logo */
     .logoHead {
-        height: 60px; /* Réduit la taille du logo */
-        margin-right: 0; /* Supprime l'espacement inutile */
+        height: 50px; /* Réduit légèrement la taille du logo */
+        margin-bottom: 10px; /* Ajoute un espacement en bas pour séparer le logo des autres éléments */
     }
 
     /* Navigation */
     nav {
-        justify-content: center; /* Centre la navigation */
-        margin-top: 10px; /* Ajoute un espace entre le logo et la navigation */
+        justify-content: center;
+        width: 100%; /* La navigation occupe toute la largeur */
+        margin-top: 10px;
     }
 
     nav ul {
-        flex-direction: column; /* Empile les liens verticalement */
-        gap: 15px; /* Augmente l'espace entre les liens */
+        flex-direction: row; /* Les liens restent alignés horizontalement */
+        gap: 15px; /* Ajoute un espacement réduit entre les liens */
+        justify-content: center; /* Centre les liens horizontalement */
+        list-style: none; /* Supprime les puces */
+        padding: 0;
+        margin: 0;
+        overflow-x: auto; /* Ajoute un défilement horizontal si nécessaire */
     }
 
     nav ul li a {
-        font-size: 20px; /* Réduit légèrement la taille des liens */
+        font-size: 16px; /* Taille légèrement réduite pour les petits écrans */
+        padding: 8px 12px; /* Surface cliquable optimisée pour mobile */
         text-align: center; /* Centre le texte */
+        border-radius: 3px; /* Ajoute un léger arrondi */
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Indique le survol */
     }
 
     /* Bouton "Nous Contacter" */
     .contact-btn {
-        margin: 10px 0 0; /* Ajoute un espace au-dessus du bouton */
-        width: 100%; /* Le bouton prend toute la largeur */
+        margin-top: 10px; /* Ajoute un espace entre la navigation et le bouton */
+        width: auto; /* Le bouton conserve sa taille naturelle */
+        text-align: center; /* Centre le bouton */
     }
 
     .contact-btn a {
-        font-size: 18px; /* Réduit la taille du texte */
-        padding: 10px; /* Ajuste l'espacement interne */
-        text-align: center; /* Centre le texte */
+        font-size: 16px; /* Taille optimisée pour mobile */
+        padding: 8px 20px; /* Surface cliquable ajustée */
+        border: 2px solid white; /* Conserve une bordure visible */
+        border-radius: 5px; /* Coins arrondis pour le bouton */
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact-btn a:hover {
+        background-color: white; /* Change le fond au survol */
+        color: rgb(70, 5, 17); /* Change la couleur du texte au survol */
     }
 }
+
