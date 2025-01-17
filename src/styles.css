@@ -120,4 +120,64 @@ section.Accueil{
 
 /* Adaptations pour les petits écrans (moins de 768px de largeur) */
 
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column; /* Réorganise les éléments en colonne */
+        align-items: center; /* Centre tous les enfants */
+        height: auto; /* Adapte la hauteur au contenu */
+        padding: 10px 15px; /* Réduit les marges internes */
+    }
 
+    /* Logo */
+    .logoHead {
+        position: absolute;
+        margin: 0px 0px 0px -330px;
+        height: 60px !important; /* Réduit la taille du logo */
+        max-width: 80%; /* Limite la largeur du logo */
+        margin-bottom: 10px; /* Ajoute un espace entre le logo et la navigation */
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex: 1; /* Prend tout l'espace entre le logo et le bouton */
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 5px; /* Espace entre les liens */
+        list-style: none;
+    }
+
+    nav ul li {
+        text-align: center; /* Centre chaque lien */
+    }
+
+    nav ul li a {
+        font-size: 10px; /* Réduit légèrement la taille des liens */
+        padding: 5px 10px; /* Ajuste la surface cliquable */
+        text-align: center;
+    }
+
+    /* Bouton "Nous Contacter" */
+    .contact-btn {
+        margin-top: 15px; /* Ajoute un espace entre la navigation et le bouton */
+        width: auto; /* Le bouton conserve sa taille naturelle */
+        text-align: center;
+    }
+
+    .contact-btn a {
+        font-size: 10px; /* Taille adaptée pour mobile */
+        padding: 5px 10px; /* Surface cliquable optimisée */
+        border: 2px solid white; /* Conserve une bordure visible */
+        border-radius: 5px; /* Coins arrondis pour un design moderne */
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact-btn a:hover {
+        background-color: white; /* Change le fond au survol */
+        color: rgb(70, 5, 17); /* Change la couleur du texte */
+    }
+}
