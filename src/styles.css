@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Inria', serif;;
     box-sizing: border-box;
 }
 
@@ -242,6 +242,78 @@ nav ul li a:hover::after {
     font-weight: bold;
 }
 
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+    width: 100%;
+    height: 805px;
+    background-color: #500614;
+    color: white;
+    p{
+        margin-bottom: 30px;
+    }
+}
+
+/* Formulaire de contact */
+.contact-form {
+    background-color: #6D071A;
+    padding: 40px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input,.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Inria', serif;
+    color: #333;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.btn-envoyer{
+    display: flex;
+    justify-content: center;
+    background-color: #500614;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Inria', serif;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-envoyer:hover {
+    background-color: #890c23;
+}
+
 
 
 
@@ -249,7 +321,7 @@ nav ul li a:hover::after {
 
 
 /* Adaptation pour les écrans de moins de 800px (Disposition verticale) */
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
     div.imageH {
         position: relative;
         width: 100%;
@@ -349,5 +421,21 @@ nav ul li a:hover::after {
     .vendus img {
         width: 150px;
         height: 180px;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .message{
+        text-align: center;
+    }
+    
+    .message h1 {
+        font-size: 28px;
+    }
+
+    .message p {
+        font-size: 16px;
     }
 }
