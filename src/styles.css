@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* Ajuste cette valeur selon la hauteur du header */
+}
+
 /* Section avec une image et un texte */
 .imageH {
     position: relative;
@@ -314,6 +319,33 @@ nav ul li a:hover::after {
     background-color: #890c23;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 210px;
+    color: black;
+    background-color: rgb(70, 5, 17);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+}
+
+.reseaux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Prend l'espace disponible pour rester au centre */
+    gap: 20px;
+    width: 100%;
+}
+
+footer p{
+    font-size: 20px;
+    text-align: center;
+}
 
 
 
@@ -437,5 +469,24 @@ nav ul li a:hover::after {
 
     .message p {
         font-size: 16px;
+    }
+
+    footer {
+        height: auto; /* Ajuste la hauteur dynamiquement */
+        padding: 10px 0;
+    }
+
+    .reseaux { /* Passe les icônes en colonne */
+        gap: 15px; /* Réduit l'espace entre les icônes */
+    }
+
+    .reseaux img {
+        width: 30px; /* Réduction de la taille des icônes */
+        height: 30px;
+    }
+
+    footer p {
+        font-size: 14px; /* Réduction de la taille du texte */
+        margin-top: 20px;
     }
 }
