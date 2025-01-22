@@ -1,14 +1,13 @@
-/* Réinitialisation globale */
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inria', serif;;
+    font-family: 'Inria', serif;
+    color: white;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px; /* Ajuste cette valeur selon la hauteur du header */
 }
 
 /* Section avec une image et un texte */
@@ -30,7 +29,6 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     font-size: 48px;
     font-family: 'Inria', serif;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
@@ -38,13 +36,18 @@ html {
 
 /* Header */
 header {
+    /*Permet de garder mon header en haut*/
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /*                                   */
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    background-color: rgb(70, 5, 17);
-    color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgb(63, 5, 16);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     padding: 0 20px;
 }
 
@@ -68,8 +71,6 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-family: 'Inria', serif;
     font-size: 24px;
     padding: 5px 10px;
     position: relative;
@@ -88,6 +89,11 @@ nav ul li a::after {
     transition: width 0.4s ease-in-out;
 }
 
+/* Augmente la largeur du souligment de la page */
+nav ul li.page a::after {
+    width: 50%; 
+}
+
 nav ul li a:hover::after {
     width: 100%;
 }
@@ -102,7 +108,6 @@ nav ul li a:hover::after {
 
 .contact-btn a {
     text-decoration: none;
-    color: white;
     font-size: 18px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -125,13 +130,12 @@ nav ul li a:hover::after {
     width: 100%;
     height: 246px;
     background-color: #6D071A;
-    color: white;
-    font-family: 'Inria', serif;
+    font-size: 18px;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 
-/* Section vendus - Desktop (horizontal) */
+/* Section vendus*/
 .vendus {
     display: flex;
     flex-direction: row; /* Disposition horizontale par défaut */
@@ -140,6 +144,7 @@ nav ul li a:hover::after {
     width: 100%;
     height: 850px;
     background-color: #500614;
+    font-size: 18px;
     gap: 50px; /* Espacement entre les éléments */
 }
 
@@ -148,8 +153,6 @@ nav ul li a:hover::after {
     position: absolute;
     padding-top: 3%;
     text-align: center;
-    color: white;
-    font-family: 'Inria', serif;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Ajuste la transparence pour un meilleur contraste */
 }
 
@@ -161,9 +164,7 @@ nav ul li a:hover::after {
 }
 
 .vendus ul li {
-    color: white;
     text-align: center;
-    font-size: 18px;
 }
 
 /*Questions*/
@@ -183,7 +184,6 @@ nav ul li a:hover::after {
     position: absolute;
     text-align: center;
     padding: 3%;
-    color: white;
     margin-bottom: 20px;
 }
 
@@ -206,16 +206,12 @@ nav ul li a:hover::after {
 }
 
 .faq details a{
-    color: white;
-    font-family: 'Inria', serif;
     font-style: italic;
 }
 
 /* Style des titres des questions */
 .faq summary {
     font-size: 20px;
-    font-family: 'Inria', serif;
-    color: white;
     padding: 30px 20px;
     background-color: #500614;
     border-radius: 10px;
@@ -234,7 +230,6 @@ nav ul li a:hover::after {
 
 /* Style du contenu des réponses */
 .faq p {
-    color: white;
     padding: 10px 20px;
     margin: 0;
     background-color: #6D071A;
@@ -255,7 +250,6 @@ nav ul li a:hover::after {
     width: 100%;
     height: 805px;
     background-color: #500614;
-    color: white;
     p{
         margin-bottom: 30px;
     }
@@ -275,7 +269,6 @@ nav ul li a:hover::after {
     display: block;
     font-size: 18px;
     font-weight: bold;
-    color: white;
     margin-bottom: 5px;
     text-align: left;
 }
@@ -305,7 +298,6 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: center;
     background-color: #500614;
-    color: white;
     border: none;
     padding: 15px 30px;
     border-radius: 5px;
@@ -327,8 +319,8 @@ footer{
     width: 100%;
     height: 210px;
     color: black;
-    background-color: rgb(70, 5, 17);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgb(63, 5, 16);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     position: relative;
 
 }
@@ -353,7 +345,7 @@ footer p{
 
 
 /* Adaptation pour les écrans de moins de 800px (Disposition verticale) */
-@media (max-width: 1000px) {
+@media (max-width: 1366px) {
     div.imageH {
         position: relative;
         width: 100%;
@@ -472,17 +464,18 @@ footer p{
     }
 
     footer {
-        height: auto; /* Ajuste la hauteur dynamiquement */
-        padding: 10px 0;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
     }
-
-    .reseaux { /* Passe les icônes en colonne */
-        gap: 15px; /* Réduit l'espace entre les icônes */
+    
+    .reseaux {
+        gap: 10px;
     }
-
+    
     .reseaux img {
-        width: 30px; /* Réduction de la taille des icônes */
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 
     footer p {
