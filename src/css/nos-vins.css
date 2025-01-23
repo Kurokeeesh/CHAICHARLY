@@ -97,11 +97,97 @@ nav ul li a:hover::after {
     color: rgb(70, 5, 17);
 }
 
-.rouge{
+.divvin {
     width: 100%;
-    height: 1477px;
+    padding: 50px 0;
     background-color: #6D071A;
+    text-align: center;
 }
+
+.divvin h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+/* Grille des vins */
+.grid-vin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les éléments */
+    gap: 30px;
+    padding: 0 5%;
+}
+
+/* Styles des éléments de vin */
+.grid-vin .vin {
+    flex: 1 1 calc(33.33% - 30px); /* Taille normale sur desktop */
+    max-width: 350px; /* Fixe une largeur maximale */
+}
+
+/* Si une seule image */
+.grid-vin:has(.vin:nth-child(1):nth-last-child(1)) {
+    justify-content: center;
+}
+
+/* Si deux images */
+.grid-vin:has(.vin:nth-child(1):nth-last-child(2)) {
+    justify-content: center;
+}
+
+
+/* Chaque vin */
+.vin {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.vin:hover {
+    transform: translateY(-5px);
+}
+
+/* Placeholder pour les images */
+.img-fond {
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Images réelles */
+.vin img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Titre du vin */
+.vin h2 {
+    font-size: 22px;
+    margin: 15px 0 5px;
+    color: white;
+}
+
+/* Description du vin */
+.vin p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+
+
+
 
 .roses{
     width: 100%;
@@ -224,7 +310,26 @@ footer p{
             color: rgb(70, 5, 17); /* Change la couleur du texte */
         }
 
+        .grid-vin {
+            grid-template-columns: 1fr;
+        }
 
+        .grid-vin .vin {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    
+        .vin {
+            padding: 15px;
+        }
+    
+        .vin h2 {
+            font-size: 20px;
+        }
+    
+        .vin p {
+            font-size: 14px;
+        }
 
 
 
