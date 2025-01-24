@@ -36,6 +36,7 @@ html {
 
 /* Header */
 header {
+    
     /*Permet de garder mon header en haut*/
     position: sticky;
     top: 0;
@@ -139,9 +140,10 @@ nav ul li a:hover::after {
 
 }
 
-
 /* Section vendus*/
 .vendus {
+    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: row; /* Disposition horizontale par défaut */
     align-items: center;
@@ -163,31 +165,40 @@ nav ul li a:hover::after {
 
 .vendus ul {
     display: flex;
-    gap: 200px; /* Espacement horizontal */
+    flex-direction: wrap;
     list-style: none;
-    padding: 0;
+    justify-content: center; /* Centre les éléments */
+    flex: 1 1 calc(33.33% - 30px); /* Taille normale sur desktop */
+    max-width: 550px; /* Fixe une largeur maximale */
+    gap: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .vendus ul li {
     text-align: center;
+    transition-duration: 0.3s;
+}
+
+.vendus ul li:hover {
+    transform: translateY(-10px);
 }
 
 /*Questions*/
 .question{
     display: flex;
-    flex-direction: row; /* Disposition horizontale par défaut */
+    flex-direction: column; /* Disposition horizontale par défaut */
     align-items: center;
-    justify-content: center;
     width: 100%;
-    height: 640px;
+    height: auto;
+    padding-bottom: 3%;
     background-color: #6D071A;
     gap: 25px;
 }
 
 .question h1{
-    text-align: center;
-    padding: 3%;
-    margin-bottom: 20px;
+    padding: 3%; 
 }
 
 /* Conteneur des questions */
@@ -352,7 +363,38 @@ footer p{
 
 
 /* Adaptation pour les écrans de moins de 800px (Disposition verticale) */
-@media (max-width: 1366px) {
+@media (max-width: 1500px) {
+    
+    .bienvenue {
+        text-align: center;
+    }
+
+    /* Section vendus */
+    .vendus {
+        height: auto;
+        padding: 20px 10px;
+    }
+    
+    .vendus .titre {
+        font-size: 30px;
+    }
+    
+    .vendus ul {
+        padding-top:10% ;
+        gap: 150px;
+    }
+    
+    .vendus ul li{
+        font-size: 12px;
+    }
+    
+    .vendus img {
+        width: 225px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 1000px) {
     div.imageH {
         position: relative;
         width: 100%;
