@@ -99,18 +99,17 @@ nav ul li a:hover::after {
 
 .nb{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-color: #500614;
     width: 100%;
     height: 300px;
     background-color: rgb(63, 5, 16);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    position: relative;
 
-    h2{
-        font-size: 30px;
+    p{
+        font-size: 28px;
         margin-left: auto;
         margin-right: auto;
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
@@ -281,7 +280,7 @@ footer p{
         }
     
         nav ul li a {
-            font-size: 10px; /* Réduit légèrement la taille des liens */
+            font-size: 18px; /* Réduit légèrement la taille des liens */
             padding: 5px 10px; /* Ajuste la surface cliquable */
             text-align: center;
         }
@@ -306,6 +305,14 @@ footer p{
         .contact-btn a:hover {
             background-color: white; /* Change le fond au survol */
             color: rgb(70, 5, 17); /* Change la couleur du texte */
+        }
+
+        .nb{
+            text-align: center;
+
+            p{
+                font-size: 25px;
+            }
         }
 
         .grid-vin {
