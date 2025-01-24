@@ -132,6 +132,11 @@ nav ul li a:hover::after {
     background-color: #6D071A;
     font-size: 18px;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+
+    p{
+        font-size: 24px;
+    }
+
 }
 
 
@@ -180,8 +185,6 @@ nav ul li a:hover::after {
 }
 
 .question h1{
-    align-self: flex-start;
-    position: absolute;
     text-align: center;
     padding: 3%;
     margin-bottom: 20px;
@@ -211,7 +214,7 @@ nav ul li a:hover::after {
 
 /* Style des titres des questions */
 .faq summary {
-    font-size: 20px;
+    font-size: 25px;
     padding: 30px 20px;
     background-color: #500614;
     border-radius: 10px;
@@ -233,6 +236,7 @@ nav ul li a:hover::after {
     padding: 10px 20px;
     margin: 0;
     background-color: #6D071A;
+    font-size: 25px;
 }
 
 /* Animation des questions ouvertes */
@@ -251,6 +255,7 @@ nav ul li a:hover::after {
     height: 805px;
     background-color: #500614;
     p{
+        font-size: 25px;
         margin-bottom: 30px;
     }
 }
@@ -301,10 +306,12 @@ nav ul li a:hover::after {
     border: none;
     padding: 15px 30px;
     border-radius: 5px;
+    margin-left: auto ;
+    margin-right: auto;
     cursor: pointer;
     font-size: 18px;
     font-family: 'Inria', serif;
-    transition: background-color 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .btn-envoyer:hover {
@@ -445,6 +452,34 @@ footer p{
     .vendus img {
         width: 150px;
         height: 180px;
+    }
+
+    .question {
+        flex-direction: column; /* Empile les éléments */
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .question h1 {
+        font-size: 28px; /* Réduction de la taille pour mobile */
+        padding: 0.5%;
+        margin-bottom: 5px;
+    }
+
+    .faq {
+        width: 90%; /* La largeur s'adapte à l'écran */
+        max-width: 100%; /* Empêche un débordement */
+        gap: 15px;
+    }
+
+    .faq summary {
+        font-size: 18px; /* Réduction de la taille du texte */
+        padding: 20px 15px;
+    }
+
+    .faq p {
+        font-size: 16px;
+        padding: 10px;
     }
 
     .contact-form {
