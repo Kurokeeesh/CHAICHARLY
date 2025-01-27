@@ -163,6 +163,10 @@ nav ul li a:hover::after {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); /* Ajuste la transparence pour un meilleur contraste */
 }
 
+.vendus img{
+    box-shadow: 30px 30px 0px 0px rgba(0, 0, 0, 0.415) ;
+}
+
 .vendus ul {
     display: flex;
     flex-direction: wrap;
@@ -441,14 +445,14 @@ footer p{
         }
     
         nav ul li a {
-            font-size: 18px; /* Réduit légèrement la taille des liens */
+            font-size: 15px; /* Réduit légèrement la taille des liens */
             padding: 5px 5px; /* Ajuste la surface cliquable */
             text-align: center;
         }
     
         /* Bouton "Nous Contacter" */
         .contact-btn {
-            margin-top: 15px; /* Ajoute un espace entre la navigation et le bouton */
+            margin-top: 16px; /* Ajoute un espace entre la navigation et le bouton */
             width: auto; /* Le bouton conserve sa taille naturelle */
             text-align: center;
         }
@@ -456,8 +460,8 @@ footer p{
         .contact-btn a {
             position: absolute;
             margin: 0px 0px 48px 295px;
-            font-size: 15px; /* Taille adaptée pour mobile */
-            padding: 2px 1px; /* Surface cliquable optimisée */
+            font-size: 14px; /* Taille adaptée pour mobile */
+            padding: 1px 1px; /* Surface cliquable optimisée */
             border: 0.5px solid white; /* Conserve une bordure visible */
             border-radius: 5px; /* Coins arrondis pour un design moderne */
             transition: all 0.3s ease-in-out;
@@ -495,6 +499,7 @@ footer p{
     .vendus img {
         width: 150px;
         height: 180px;
+        box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.415) ;
     }
 
     .question {
