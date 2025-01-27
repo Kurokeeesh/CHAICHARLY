@@ -257,8 +257,8 @@ footer p{
         /* Logo */
         .logoHead {
             position: absolute;
-            margin: -8px 0px 0px -330px !important;
-            height: 50px !important; /* Réduit la taille du logo */
+            margin: -8px 0px 0px -320px !important;
+            height: 60px !important; /* Réduit la taille du logo */
             max-width: 80%; /* Limite la largeur du logo */
             margin-bottom: 10px; /* Ajoute un espace entre le logo et la navigation */
         }
@@ -277,28 +277,29 @@ footer p{
         }
     
         nav ul li {
+            padding-top:10px ;
             text-align: center; /* Centre chaque lien */
         }
     
         nav ul li a {
-            font-size: 18px; /* Réduit légèrement la taille des liens */
-            padding: 5px 10px; /* Ajuste la surface cliquable */
+            font-size: 15px; /* Réduit légèrement la taille des liens */
+            padding: 5px 5px; /* Ajuste la surface cliquable */
             text-align: center;
         }
     
         /* Bouton "Nous Contacter" */
         .contact-btn {
-            margin-top: 15px; /* Ajoute un espace entre la navigation et le bouton */
+            margin-top: 16px; /* Ajoute un espace entre la navigation et le bouton */
             width: auto; /* Le bouton conserve sa taille naturelle */
             text-align: center;
         }
     
         .contact-btn a {
             position: absolute;
-            margin: 0px 0px 40px 295px;
-            font-size: 10px; /* Taille adaptée pour mobile */
-            padding: 5px 10px; /* Surface cliquable optimisée */
-            border: 2px solid white; /* Conserve une bordure visible */
+            margin: 0px 0px 48px 295px;
+            font-size: 14px; /* Taille adaptée pour mobile */
+            padding: 1px 1px; /* Surface cliquable optimisée */
+            border: 0.5px solid white; /* Conserve une bordure visible */
             border-radius: 5px; /* Coins arrondis pour un design moderne */
             transition: all 0.3s ease-in-out;
         }
@@ -312,7 +313,14 @@ footer p{
             text-align: center;
 
             p{
-                font-size: 25px;
+                font-size: 23px;
+            }
+        }
+
+        .divvin{
+
+            h1{
+                font-size: 35px;
             }
         }
 
@@ -334,7 +342,7 @@ footer p{
         }
     
         .vin p {
-            font-size: 14px;
+            font-size: 16px;
         }
 
         footer {

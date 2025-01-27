@@ -474,6 +474,14 @@ footer p{
 
     .bienvenue {
         text-align: center;
+
+        h1{
+            font-size: 35px;
+        }
+
+        p{
+            font-size: 23px;
+        }
     }
 
     /* Section vendus */
@@ -483,7 +491,7 @@ footer p{
     }
 
     .vendus .titre {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .vendus ul {
@@ -509,7 +517,7 @@ footer p{
     }
 
     .question h1 {
-        font-size: 28px; /* Réduction de la taille pour mobile */
+        font-size: 35px; /* Réduction de la taille pour mobile */
         padding: 0.5%;
         margin-bottom: 5px;
     }
@@ -539,11 +547,11 @@ footer p{
     }
     
     .message h1 {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .message p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     footer {
