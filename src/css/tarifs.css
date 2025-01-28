@@ -217,15 +217,19 @@ footer p{
             color: rgb(70, 5, 17); /* Change la couleur du texte */
         }
 
-    .visupdf{
+    /*.visupdf{
         height: 700px;
-    }
+    }*/
 
     .pdf{
-        height: auto;
+        /*height: px;*/
 
         h1{
             font-size: 35px;
+        }
+
+        .visupdf{
+            height: auto;
         }
     }
 
