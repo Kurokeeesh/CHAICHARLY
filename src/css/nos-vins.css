@@ -110,7 +110,7 @@ header nav ul li a:hover::after {
     text-align: center;
     background-color: rgb(73, 7, 19);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    padding: 0 20px;
+    padding: 2%;
 }
 
 .nav ul{
@@ -118,7 +118,7 @@ header nav ul li a:hover::after {
     flex-direction: row;
     list-style: none;
     text-decoration: none;
-    padding: 6%;
+    justify-content: center;
 }
 
 .nav ul li a{
@@ -152,6 +152,11 @@ header nav ul li a:hover::after {
         margin-right: auto;
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
     }
+}
+
+.BIB{
+    height: 195px;
+    background-color: #6D071A;
 }
 
 .divvin {
@@ -355,7 +360,7 @@ footer p{
         }
 
         .nav{
-            top: 53px;
+            top: 55px;
         }
 
         .nav ul {
@@ -367,6 +372,14 @@ footer p{
             font-size: 15px ;
         }
 
+        .nav ul li a:hover{
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .BIB{
+            height: 55px;
+        }
         .divvin{
 
             h1{
