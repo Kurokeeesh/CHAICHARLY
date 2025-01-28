@@ -36,7 +36,6 @@ html {
 
 /* Header */
 header {
-    
     /*Permet de garder mon header en haut*/
     position: sticky;
     top: 0;

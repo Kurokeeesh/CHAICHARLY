@@ -33,19 +33,19 @@ header {
 }
 
 /* Navigation */
-nav {
+header nav {
     display: flex;
     flex: 1;
     justify-content: center;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     gap: 50px;
     list-style: none;
 }
 
-nav ul li a {
+header ul li a {
     text-decoration: none;
     font-size: 24px;
     padding: 5px 10px;
@@ -53,7 +53,7 @@ nav ul li a {
     transition: all 0.4s ease-in-out;
 }
 
-nav ul li a::after {
+header nav ul li a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -66,11 +66,11 @@ nav ul li a::after {
 }
 
 /* Augmente la largeur du souligment de la page */
-nav ul li.page a::after {
+header nav ul li.page a::after {
     width: 50%; 
 }
 
-nav ul li a:hover::after {
+header nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -95,6 +95,43 @@ nav ul li a:hover::after {
 .contact-btn a:hover {
     background-color: white;
     color: rgb(70, 5, 17);
+}
+
+.nav{
+    /*Permet de garder mon header en haut*/
+    position: sticky;
+    top: 100px;
+    width: 100%;
+    z-index: 10000;
+    /*           */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(73, 7, 19);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    padding: 6%;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px 10px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+} 
+
+.nav ul li a:hover{
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .nb{
@@ -244,7 +281,7 @@ footer p{
     text-align: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 
         /* Header */
         header {
@@ -264,24 +301,24 @@ footer p{
         }
     
         /* Navigation */
-        nav {
+        header nav {
             display: flex;
             flex: 1; /* Prend tout l'espace entre le logo et le bouton */
             justify-content: center;
         }
     
-        nav ul {
+        header nav ul {
             display: flex;
             gap: 5px; /* Espace entre les liens */
             list-style: none;
         }
     
-        nav ul li {
+        header nav ul li {
             padding-top:10px ;
             text-align: center; /* Centre chaque lien */
         }
     
-        nav ul li a {
+        header nav ul li a {
             font-size: 15px; /* Réduit légèrement la taille des liens */
             padding: 5px 5px; /* Ajuste la surface cliquable */
             text-align: center;
@@ -315,6 +352,19 @@ footer p{
             p{
                 font-size: 20px;
             }
+        }
+
+        .nav{
+            top: 53px;
+        }
+
+        .nav ul {
+            flex-direction: column;
+            gap: 5px; /* Espace entre les liens */
+        }
+
+        .nav ul li a{
+            font-size: 15px ;
         }
 
         .divvin{
