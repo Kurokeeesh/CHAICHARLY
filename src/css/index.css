@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    cursor: url('https://cur.cursors-4u.net/food/foo-4/foo345.cur'), auto !important;
+}
+
 html {
     scroll-behavior: smooth;
 }

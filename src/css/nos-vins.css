@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    cursor: url('https://cur.cursors-4u.net/food/foo-4/foo345.cur'), auto !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -207,7 +211,7 @@ header nav ul li a:hover::after {
     transform: translateY(-5px);
 }
 
-/* Placeholder pour les images */
+/* Placeholder pour les images
 .img-fond {
     width: 100%;
     height: 300px;
@@ -219,7 +223,7 @@ header nav ul li a:hover::after {
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
-}
+}*/
 
 /* Images réelles */
 .vin img {
