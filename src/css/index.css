@@ -214,6 +214,7 @@ nav ul li a:hover::after {
 }
 
 .vendus img{
+    border-radius: 10px;
     box-shadow: 30px 30px 0px 0px rgba(0, 0, 0, 0.415) ;
 }
 
@@ -224,7 +225,7 @@ nav ul li a:hover::after {
     justify-content: center; /* Centre les éléments */
     flex: 1 1 calc(33.33% - 30px); /* Taille normale sur desktop */
     max-width: 550px; /* Fixe une largeur maximale */
-    gap: 200px;
+    gap: 150px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -427,6 +428,10 @@ footer p{
     .vendus {
         height: auto;
         padding: 20px 10px;
+
+        h2{
+            padding-top: 5%;
+        }
     }
     
     .vendus .titre {
@@ -435,7 +440,7 @@ footer p{
     
     .vendus ul {
         padding-top:10% ;
-        gap: 150px;
+        gap: 70px;
     }
     
     .vendus ul li{
@@ -443,12 +448,49 @@ footer p{
     }
     
     .vendus img {
-        width: 225px;
-        height: 270px;
+        width: 250px;
+        height: 250px;
+        box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.415) ;
     }
 }
 
 @media (max-width: 1000px) {
+    .bienvenue {
+        text-align: center;
+    }
+
+    /* Section vendus */
+    .vendus {
+        height: auto;
+        padding: 20px 10px;
+
+        h2{
+            padding-top: 5%;
+        }
+    }
+    
+    .vendus .titre {
+        font-size: 30px;
+    }
+    
+    .vendus ul {
+        padding-top:10% ;
+        gap: 70px;
+    }
+    
+    .vendus ul li{
+        font-size: 12px;
+    }
+    
+    .vendus img {
+        width: 190px;
+        height: 190px;
+        box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.415) ;
+    }
+
+}
+
+@media (max-width: 800px) {
     div.imageH {
         position: relative;
         width: 100%;
@@ -538,6 +580,10 @@ footer p{
     .vendus {
         height: auto;
         padding: 20px 10px;
+
+        h2{
+            padding-top: 3%;
+        }
     }
 
     .vendus .titre {
@@ -547,7 +593,7 @@ footer p{
     .vendus ul {
         flex-direction: column;
         padding-top:100px ;
-        gap: 20px;
+        gap: 50px;
     }
 
     .vendus ul li{
@@ -556,7 +602,7 @@ footer p{
 
     .vendus img {
         width: 150px;
-        height: 180px;
+        height: 150px;
         box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.415) ;
     }
 
