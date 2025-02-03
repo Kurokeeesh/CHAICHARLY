@@ -225,7 +225,7 @@ nav ul li a:hover::after {
     justify-content: center; /* Centre les éléments */
     flex: 1 1 calc(33.33% - 30px); /* Taille normale sur desktop */
     max-width: 550px; /* Fixe une largeur maximale */
-    gap: 150px;
+    gap: 90px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -234,6 +234,10 @@ nav ul li a:hover::after {
 .vendus ul li {
     text-align: center;
     transition-duration: 0.3s;
+
+    a{
+        text-decoration: none;
+    }
 }
 
 .vendus ul li:hover {
