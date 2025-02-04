@@ -143,9 +143,10 @@ header nav ul li a:hover::after {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 3%;
     background-color: #500614;
     width: 100%;
-    height: 300px;
+    height: auto;
     background-color: rgb(63, 5, 16);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     position: relative;
