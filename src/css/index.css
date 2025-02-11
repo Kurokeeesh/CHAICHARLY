@@ -40,29 +40,6 @@ html {
 
 /* Header */
 header {
-    /*Permet de garder mon header en haut*/
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    /*                                   */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    background-color: rgb(63, 5, 16);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    padding: 0 20px;
-}
-
-.logoHead {
-    height: 100%;
-    margin-right: auto;
-}
-
-/* Navigation */
-/* Header */
-header {
     position: sticky;
     top: 0;
     width: 100%;
@@ -82,28 +59,6 @@ header {
     margin-right: auto; /* Aligne le logo à gauche */
 }
 
-/* Navigation */
-/* Header */
-header {
-    /*Permet de garder mon header en haut*/
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    /*                                   */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    background-color: rgb(63, 5, 16);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    padding: 0 20px;
-}
-
-.logoHead {
-    height: 100%;
-    margin-right: auto;
-}
 
 /* Navigation */
 nav {
